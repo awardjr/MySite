@@ -14,3 +14,18 @@ h1.title {
         box-shadow: 0 5px 6px rgba(10, 10, 10, 0.2), 0 0 0 1px rgba(10, 10, 10, 0.2);
     }
 }
+
+.me {
+    top: -260px;
+    position: absolute;
+    width: 100%;
+    img{
+        width: 305px;
+        margin: auto;
+        border-radius: 48px;
+    }
+    @include mobile {
+        position: relative;
+        top: -24px;
+    }
+}
