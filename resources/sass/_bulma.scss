@@ -7,6 +7,15 @@ $danger: #BA2A54;
 $primary: #3374D1;
 $warning: #D1AF2E;
 $success: #24854D;
+$projects: #F6F6F6;
 
+$projects-invert: #101010;
+$panel-heading-background-color: #DFDFDF;
+
+@import "~bulma/sass/utilities/derived-variables";
+$addColors: (
+  "projects":($projects, $projects-invert),
+);
+$colors: map-merge($colors, $addColors);
 
 @import "~bulma/bulma.sass";
