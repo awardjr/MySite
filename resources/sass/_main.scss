@@ -15,6 +15,12 @@ h1.title {
     }
 }
 
+.button {
+    &.is-large{
+        min-width: 166px;
+    }
+}
+
 .me {
     top: -260px;
     position: absolute;
