@@ -14,9 +14,8 @@ let mix = require('laravel-mix');
 
 mix.options({publicPath: 'public'});
 //If you're not using font-awesome, or only using some times, comment out the ones you're not using before building
-mix.scripts(['resources/js/app.js', 'node_modules/@fortawesome/fontawesome/index.js',
-                                    /*'node_modules/@fortawesome/fontawesome-free-regular/index.js',*/
-                                    'node_modules/@fortawesome/fontawesome-free-solid/index.js', 
-                                    'node_modules/@fortawesome/fontawesome-free-brands/index.js'], 'public/js/app.js');
+mix.scripts(['resources/js/app.js','node_modules/@fortawesome/fontawesome-free/js/fontawesome.js',
+                                    'node_modules/@fortawesome/fontawesome-free/js/solid.js',
+                                    'node_modules/@fortawesome/fontawesome-free/js/brands.js'], 'public/js/app.js');
 mix.sass('resources/sass/app.scss', 'public/css');
 
